@@ -20,9 +20,8 @@ public class ReservaVaga {
     public void imprimirReserva() {
         System.out.println("Reserva da vaga: " + vaga.getCodigo());
         System.out.println("Setor: " + vaga.getSetor());
-        System.out.println("Cliente da reserva: " + vaga.getNomeClienteReserva());
         System.out.println("Cliente vinculado: " + cliente.getNome());
-        System.out.println("Horário da reserva: " + vaga.getHorarioReserva());
+
     }
 
     public Vaga getVaga() {
