@@ -23,12 +23,8 @@ public class Main {
                 4200,
                 18,
                 true,
-                "Banco Acadêmico",
-                "1234",
-                "98765-0",
-                "Pix");
+                new DadosCobranca("Banco Acadêmico", "1234", "98765-0", "Pix"));
 
-        // Datas saem daqui...
         Veiculo veiculo = new Veiculo(
                 "ABC-1234",
                 "Honda Civic",
@@ -45,14 +41,13 @@ public class Main {
                 "Mariana Souza",
                 LocalDateTime.of(2026, 6, 20, 9, 0));
 
-        // ...e vão para cá
         TicketEstacionamento ticket = new TicketEstacionamento(
                 "TCK-1001",
                 veiculo,
                 vaga,
                 false,
-                LocalDateTime.of(2026, 6, 20, 9, 30),  // dataHoraEntrada
-                LocalDateTime.of(2026, 6, 20, 12, 15)); // dataHoraSaidaPrevista
+                LocalDateTime.of(2026, 6, 20, 9, 30),
+                LocalDateTime.of(2026, 6, 20, 12, 15));
 
         ReservaVaga reserva = new ReservaVaga(vaga, cliente);
         RegistroPagamento pagamento = new RegistroPagamento(ticket, cliente, new BigDecimal("48.5"));
