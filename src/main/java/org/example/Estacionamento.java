@@ -5,23 +5,11 @@ public class Estacionamento {
     private String nome;
     private String cnpj;
 
-    private String rua;
-    private String numero;
-    private String bairro;
-    private String cidade;
-    private String estado;
-    private String cep;
 
-    public Estacionamento(String nome, String cnpj, String rua, String numero,
-                          String bairro, String cidade, String estado, String cep) {
+    public Estacionamento(String nome, String cnpj) {
         this.nome = nome;
         this.cnpj = cnpj;
-        this.rua = rua;
-        this.numero = numero;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.estado = estado;
-        this.cep = cep;
+
     }
 
     public void imprimirDados() {
