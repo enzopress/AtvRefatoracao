@@ -40,13 +40,13 @@ public class Main {
                 LocalDateTime.of(2026, 6, 20, 9, 30),
                 LocalDateTime.of(2026, 6, 20, 12, 15));
 
-        ReservaVaga reserva = new ReservaVaga(vaga, cliente);
+        //ReservaVaga reserva = new ReservaVaga(vaga, cliente);
         RegistroPagamento pagamento = new RegistroPagamento(ticket, cliente, new BigDecimal("48.5"));
         OperacaoEstacionamento operacao = new OperacaoEstacionamento();
         CentralClientes centralClientes = new CentralClientes();
         PainelVagas painelVagas = new PainelVagas();
 
-        estacionamento.imprimirDados();
+        //estacionamento.imprimirDados();
         System.out.println();
 
         cliente.imprimirResumo();
@@ -58,7 +58,7 @@ public class Main {
         ticket.imprimirTicket();
         System.out.println();
 
-        reserva.imprimirReserva();
+        //reserva.imprimirReserva();
         System.out.println();
 
         System.out.println("Minutos de permanência: " + operacao.calcularMinutosPermanencia(ticket));
